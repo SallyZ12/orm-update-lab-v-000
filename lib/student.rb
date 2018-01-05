@@ -54,6 +54,11 @@ class Student
     DB[:conn].execute(sql, self.name, self.grade, self.id)
   end
 
+  def self.new_from_db(row)
+
+    
+  end
+
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
 
